@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "huggingface-transformers"
+version = "0.1.0"
+description = ""
+authors = ["Jakub Zdanowski <zdanowski78@gmail.com>"]
+readme = "README.md"
+packages = [{include = "huggingface_transformers"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+transformers = {extras = ["sentencepiece"], version = "^4.25.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
